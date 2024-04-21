@@ -1,0 +1,8 @@
+[requires]
+gflags/2.2.2
+ceres-solver/2.0.0
+gtsam/4.2
+
+[generators]
+CMakeDeps
+CMakeToolchain
