@@ -142,7 +142,7 @@ bool OutputPoses(const std::string& filename,
   for (std::map<int, Pose2d>::const_iterator poses_iter = poses.begin();
        poses_iter != poses.end(); ++poses_iter) {
     const std::map<int, Pose2d>::value_type& pair = *poses_iter;
-    outfile <<  pair.first << " " << pair.second.x << " " << pair.second.y
+    outfile << "VERTEX_SE2 " << pair.first << " " << pair.second.x << " " << pair.second.y
             << ' ' << pair.second.yaw_radians << '\n';
   }
   return true;

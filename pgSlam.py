@@ -294,9 +294,11 @@ def readG2o(fileName):
 
 if __name__ == '__main__':
 
-	(x, y, t) = readG2o("./input_M3500_g2o.g2o") # parking-garage.g2o
-	(xOpt, yOpt, tOpt) = readG2o("./build/input_M3500_g2o_optimized.g2o") # parking-garage.g2o
-	drawTwo(x, y, t, xOpt, yOpt, tOpt)
+	(x, y, t) = readG2o("./dataset/input_M3500_g2o.g2o") # parking-garage.g2o
+	(x1, y1, t1) = readG2o("./dataset/input_M3500_g2o_ceres.g2o") # parking-garage.g2o
+	(x2, y2, t2) = readG2o("./dataset/input_M3500_g2o_gtsam.g2o") # parking-garage.g2o
+
+	drawThree(x, y, t, x1, y1, t1, x2, y2, t2)
 
 	# (xOpt, yOpt, tOpt) = readG2o("./input_M3500_g2o.g2o") # parking-garage.g2o
 	# draw(xOpt, yOpt, tOpt)
