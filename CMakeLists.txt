@@ -10,6 +10,6 @@ find_package(gflags REQUIRED)
 find_package(Ceres REQUIRED)
 find_package(GTSAM REQUIRED)
 
-
 add_subdirectory(ceres_examples)
 add_subdirectory(gtsam_examples)
+add_subdirectory(examples)
